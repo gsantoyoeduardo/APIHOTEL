@@ -1,0 +1,114 @@
+<?php
+
+namespace {{ namespace }};
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+/**
+ * Clase {{ class }}
+ * 
+ * Este controlador se encarga de gestionar las operaciones CRUD 
+ * para el recurso relacionado. Los métodos proporcionados son 
+ * los estándares para un controlador de recursos en Laravel.
+ */
+class {{ class }} extends Controller
+{
+    /**
+     * Muestra una lista del recurso.
+     *
+     * Este método se utiliza para devolver una vista o datos relacionados
+     * con una colección del recurso. Por ejemplo, puede ser útil para
+     * mostrar un listado en una tabla.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        // Código para listar los recursos.
+    }
+
+    /**
+     * Muestra el formulario para crear un nuevo recurso.
+     *
+     * Este método se usa para mostrar un formulario donde los usuarios 
+     * pueden ingresar los datos para crear un nuevo recurso.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        // Código para mostrar el formulario de creación.
+    }
+
+    /**
+     * Almacena un recurso recién creado en el almacenamiento.
+     *
+     * Este método se encarga de procesar y guardar los datos enviados 
+     * desde el formulario de creación.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        // Código para validar y guardar el recurso en la base de datos.
+    }
+
+    /**
+     * Muestra un recurso específico.
+     *
+     * Este método se usa para devolver una vista o datos relacionados 
+     * con un recurso en particular identificado por su ID.
+     *
+     * @param  string  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show(string $id)
+    {
+        // Código para mostrar los detalles de un recurso.
+    }
+
+    /**
+     * Muestra el formulario para editar un recurso específico.
+     *
+     * Este método devuelve un formulario precargado con los datos 
+     * existentes del recurso, para que puedan ser editados.
+     *
+     * @param  string  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit(string $id)
+    {
+        // Código para mostrar el formulario de edición.
+    }
+
+    /**
+     * Actualiza un recurso específico en el almacenamiento.
+     *
+     * Este método procesa y guarda los cambios enviados desde 
+     * el formulario de edición para un recurso en particular.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  string  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, string $id)
+    {
+        // Código para validar y actualizar el recurso en la base de datos.
+    }
+
+    /**
+     * Elimina un recurso específico del almacenamiento.
+     *
+     * Este método se usa para eliminar un recurso identificado 
+     * por su ID de la base de datos u otro almacenamiento.
+     *
+     * @param  string  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy(string $id)
+    {
+        // Código para eliminar el recurso.
+    }
+}
